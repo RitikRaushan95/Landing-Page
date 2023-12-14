@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(image/misile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: orange;
+    color: black;
+    padding: 1em 0;
+}
+
+nav h1 {
+    margin: 0;
+    float: left; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+nav li {
+    margin-left: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    animation: glow 1s infinite;
+    background-color: green;
+}
+.main-content{
+    margin: 5px;
+    padding: 5px;
+    font-family: monospace;
+    text-decoration: solid;
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px green;
+    }
+    50% {
+        box-shadow: 0 0 20px green, 0 0 30px green;
+    }
+    100% {
+        box-shadow: 0 0 5px green;
+    }
+}
+.main-content,
+.about-section,
+.services-section,
+.contact-form {
+    text-align: center;
+    padding: 2em 0;
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.frstgenerals{
+    display: grid;
+    justify-items: center;
+    text-align: left;
+}
+.general{
+    margin: 15px; 
+    padding: 10px; 
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+    border-start-start-radius: 10vh;
+   border-style: double;
+   
+}
+
+.general img{
+     margin-left: 18vh;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-style: groove;
+    object-position: center;
+}
+.general1{
+    margin: 10vh;
+    padding: 10px;
+    width: 32%;
+    height: 100%;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+   border-start-start-radius: 10vh;
+   border-style: double;
+
+}
+.general1 img{
+    margin-left: 18vh;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-style: groove;
+}
+.general2{
+    margin: 18vh;
+    padding: 10px;
+    width: 30%;
+    height: 85%;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+   border-start-start-radius: 10vh;
+   border-style: double;
+}
+.general2 img{
+    margin-left: 18vh;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-style: groove;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .frstgenerals{
+        justify-items: left;
+    }
+       .general{
+        margin: 15px; 
+        padding: 10px; 
+        width: 55%;
+        height: 100%;
+       
+    }
+    
+    .general img{
+        margin-left: 10vh;
+        width: 40%;
+        height: 50%;
+    }
+    .general1{
+        justify-items: left;
+        margin: 10vh; 
+        padding: 10px; 
+        width: 55%;
+        height: 100%;
+    
+    }
+    .general1 img{
+        margin-left: 10vh;
+        width: 40%;
+        height: 50%;
+        border-radius: 50%;
+        border-color: black;
+        border-style: groove;
+    }
+    .general2{
+        margin: 15vh; 
+        padding: 10px; 
+        width: 55%;
+        height: 66%;
+    }
+    .general2 img{
+        margin-left: 10vh;
+        width: 40%;
+        height: 50%;
+        border-radius: 50%;
+        border-color: black;
+        border-style: groove;
+    }
+}
+
+
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(211, 11, 11);
+    border-radius: 50px;
+}
+
+
+footer {
+    background: linear-gradient(to right, green,orange);
+    background-size: 200% 100%;
+    animation: wave 2s linear infinite;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@keyframes wave {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
